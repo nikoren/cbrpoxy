@@ -19,3 +19,9 @@ curl --request GET \
     - During this time all requests will fail immideately
     - After 20 seconds timeout , CB will change the state to `HalfOpen` which will allow single request to pass through
     - If the request successful , it will Close the CB other Open it and start another 20 seconds time cycle
+
+### Next steps
+- Make the service configurable
+    - Move conditions configurations to config
+    - Move Circuit breaker configuration to config
+    - Move Server startup configuration to config
